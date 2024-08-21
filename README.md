@@ -77,7 +77,7 @@ bash
 ### Author
  [Abdarahmane Demba](https://github.com/Abdarahmane/Gestion_Bibliotheque-2.git)
  et
-[Fatima cissé](https://github.com/Fatoumacisse99?tab=repositories)
+[Fatima cissé](https://github.com/Fatoumacisse99)
 
  
 
