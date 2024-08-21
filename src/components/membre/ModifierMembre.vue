@@ -71,5 +71,5 @@ const onSubmit = () => {
 </script>
 
 <style scoped>
-/* Ajoute tes styles ici */
+
 </style>

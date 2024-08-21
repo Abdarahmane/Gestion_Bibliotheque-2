@@ -10,7 +10,7 @@ const props = defineProps({
       titre: '',
       auteur: '',
       annee: 2024,
-    }),
+    }),required: true,
   },
   index: {
     type: Number,
@@ -61,7 +61,7 @@ const onSubmit = () => {
             </div>
             <div class="mb-3">
               <label for="annee" class="form-label">Année</label>
-              <input type="number" class="form-control" id="annee" v-model="annee" />
+              <input type="date" class="form-control" id="annee" v-model="annee" />
             </div>
             <button type="submit" class="btn btn-primary">Enregistrer</button>
           </form>

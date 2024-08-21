@@ -49,5 +49,4 @@ watch(() => props.membre, (newMembre) => {
 </template>
 
 <style scoped>
-/* Ajoute tes styles ici */
 </style>

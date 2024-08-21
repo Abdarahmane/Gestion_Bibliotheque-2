@@ -22,19 +22,19 @@ const onSubmit = () => {
     <form class="row gx-3 gy-1 align-items-center" @submit.prevent="onSubmit">
       <div class="col-sm-3">
         <label for="id">Id</label>
-        <input type="number" class="form-control" id="id" v-model="id" />
+        <input type="number" class="form-control" id="id" v-model="id" required/>
       </div>
       <div class="col-sm-3">
         <label for="livreId">Livre ID</label>
-        <input type="text" class="form-control" id="livreId" v-model="livreId" />
+        <input type="text" class="form-control" id="livreId" v-model="livreId" required/>
       </div>
       <div class="col-sm-3">
         <label for="emprunteur">Emprunteur</label>
-        <input type="text" class="form-control" id="emprunteur" v-model="emprunteur" />
+        <input type="text" class="form-control" id="emprunteur" v-model="emprunteur" required/>
       </div>
       <div class="col-sm-3">
         <label for="datePret">Date de Prêt</label>
-        <input type="date" class="form-control" id="datePret" v-model="datePret" />
+        <input type="date" class="form-control" id="datePret" v-model="datePret" required/>
       </div>
       <div class="col-auto">
         <button type="submit" class="btn btn-primary mt-4">Valider</button>
