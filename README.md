@@ -1,6 +1,7 @@
 
 
 
+
 # Projet de Gestion de Bibliothèque
 
 Ce projet est une application web de gestion de bibliothèque développée avec Vue.js. L'application permet de gérer efficacement les livres, les membres et les prêts au sein de la bibliothèque grâce à une interface utilisateur intuitive et interactive. Les détails des livres, des membres et des prêts sont présentés de manière organisée, offrant une expérience utilisateur fluide et agréable.
@@ -68,14 +69,19 @@ bash
 
 **Accéder à l'application :**
 
-    Ouvre ton navigateur et visite http://localhost:5173/ 
+   
+ Ouvre ton navigateur et visite
+ 
+     http://localhost:5173/ 
 
 ### Author
- [ Abdarahmane Demba ]https://github.com/Abdarahmane/Gestion_Bibliotheque-2.git
- [ Fatima cissé ]https://github.com/Fatoumacisse99?tab=repositories
-
-
-
+ [Abdarahmane Demba](https://github.com/Abdarahmane/Gestion_Bibliotheque-2.git)
+ et
+[Fatima cissé](https://github.com/Fatoumacisse99?tab=repositories)
 
  
+
+ 
+   
+
    
