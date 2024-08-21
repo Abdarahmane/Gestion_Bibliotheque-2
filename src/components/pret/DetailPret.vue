@@ -1,4 +1,5 @@
-<!-- <template>
+<!-- DetailPret -->
+<template>
   <div>
     <h3>Détails du Prêt</h3>
     <p><strong>ID:</strong> {{ pret.id }}</p>
@@ -19,4 +20,4 @@ const props = defineProps({
     required: true
   }
 });
-</script> -->
+</script>

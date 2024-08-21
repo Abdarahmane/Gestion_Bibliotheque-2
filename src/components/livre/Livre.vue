@@ -40,7 +40,7 @@ const viewLivreDetails = (index) => {
 
 <template>
   <div class="container">
-    <h1 class="text-center border-bottom mb-4">Gestion de Livre</h1>
+    <h1 class="text-center border-bottom mb-4" mt-2>Gestion de Livre</h1>
     <AjouteLivre @onAdd="addLivre" class="mb-4" />
     <ListeLivre :livres="livres" @onRemove="removeLivre" @onEdit="editLivre" class="mt-4" />
     
@@ -48,6 +48,7 @@ const viewLivreDetails = (index) => {
                    :livre="selectedLivre" 
                    :index="selectedIndex" 
                    @onSave="updateLivre" />
+                   
 
     <DetailLivre v-if="selectedLivre" :livre="selectedLivre" />                           
   </div>
