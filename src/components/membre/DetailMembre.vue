@@ -49,4 +49,5 @@ watch(() => props.membre, (newMembre) => {
 </template>
 
 <style scoped>
+
 </style>

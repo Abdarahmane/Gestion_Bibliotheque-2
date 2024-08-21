@@ -31,7 +31,7 @@ const editPret = (index) => {
 
 const returnPret = (index) => {
   alert(`Le livre avec l'ID ${prets.value[index].livreId} a été retourné.`);
-  removePret(index);
+
 };
 </script>
 

@@ -1,4 +1,5 @@
 <template>
+   
    <div class="bg-image" style="background-image: url('https://img.freepik.com/photos-gratuite/vue-face-livres-echelles-empiles-espace-copie-pour-journee-education_23-2149241015.jpg?t=st=1724224943~exp=1724228543~hmac=009c678baf5561042d11eb17ea51d9d9a7da86f6757ab1f3cfa3adddbd65c122&w=360')">
   <div id="app">
 
@@ -35,6 +36,7 @@
     <router-view />
   </div>
 </div>
+
 </template>
 
 <script>

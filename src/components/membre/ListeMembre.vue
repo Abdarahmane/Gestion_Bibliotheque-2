@@ -17,8 +17,8 @@ const editMembre = (index) => {
   emit('onEdit', index);
 };
 
-const viewMembreDetails = (index) => {
-  emit('onViewDetails', index);
+const viewMembreDetails = (membre) => {
+  emit('onViewDetails', membre);
 };
 </script>
 
@@ -44,7 +44,7 @@ const viewMembreDetails = (index) => {
         <td>
           <button class="btn btn-danger btn-sm" @click="removeMembre(index)">Supprimer</button>
           <button class="btn btn-secondary btn-sm" @click="editMembre(index)">Modifier</button>
-          <button class="btn btn-info btn-sm" @click="viewMembreDetails(index)">Détails</button>
+          <button class="btn btn-info btn-sm" @click="viewMembreDetails(membre)">Détails</button>
         </td>
       </tr>
     </tbody>

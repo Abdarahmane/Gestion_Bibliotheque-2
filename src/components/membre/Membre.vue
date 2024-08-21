@@ -2,14 +2,22 @@
   <div class="container">
     <h1 class="text-center border-bottom mb-4">Gestion des Membres</h1>
     <AjouteMembre @onAdd="addMembre" class="mb-4" />
-    <ListeMembre :membres="membres" @onRemove="removeMembre" @onEdit="editMembre" @onViewDetails="viewMembreDetails" class="mt-4" />
+    <ListeMembre 
+      :membres="membres" 
+      @onRemove="removeMembre" 
+      @onEdit="editMembre" 
+      @onViewDetails="viewMembreDetails" 
+      class="mt-4" 
+    />
     
-    <ModifierMembre v-if="selectedMembre" 
-                    :membre="selectedMembre" 
-                    :index="selectedIndex" 
-                    @onSave="updateMembre" />
+    <ModifierMembre 
+      v-if="selectedMembre" 
+      :membre="selectedMembre" 
+      :index="selectedIndex" 
+      @onSave="updateMembre" 
+    /> 
 
-    <DetailMembre v-if="selectedMembre" :membre="selectedMembre" />                           
+    <DetailMembre v-if="membreDetails" :membre="membreDetails" />                           
   </div>
 </template>
 
@@ -26,6 +34,7 @@ const membres = ref([
 
 const selectedMembre = ref(null);
 const selectedIndex = ref(null);
+const membreDetails = ref(null); // Nouvelle variable pour les détails
 
 const addMembre = (id, nom, email, dateInscription) => {
   membres.value.push({ id, nom, email, dateInscription });
@@ -45,10 +54,14 @@ const editMembre = (index) => {
   selectedIndex.value = index;
 };
 
-const viewMembreDetails = (index) => {
-  selectedMembre.value = membres.value[index];
-  const detailModal = new bootstrap.Modal(document.getElementById('detailMembreModal'));
-  detailModal.show();
+const viewMembreDetails = (membre) => {
+  membreDetails.value = membre; // Utiliser membreDetails
+  alert(
+    `ID: ${membreDetails.value.id}\n` +
+    `Nom: ${membreDetails.value.nom}\n` +
+    `Email: ${membreDetails.value.email}\n` +
+    `Date d'inscription: ${membreDetails.value.dateInscription}`
+  );
 };
 </script>
 
